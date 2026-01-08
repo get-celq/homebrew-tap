@@ -5,7 +5,7 @@ This is a [Homebrew](https://brew.sh) tap for [celq](https://github.com/IvanIsCo
 ## Installation
 
 ```bash
-brew install IvanIsCoding/tap/celq
+brew install get-celq/tap/celq
 ```
 
 ## About
@@ -13,7 +13,7 @@ brew install IvanIsCoding/tap/celq
 celq is a Common Expression Language (CEL) CLI Tool. Think of it as `jq` with CEL syntax.
 
 ```bash
-brew install IvanIsCoding/tap/celq
+brew install get-celq/tap/celq
 ```
 
 **Usage:**
