@@ -1,22 +1,22 @@
 class Celq < Formula
   desc "A Common Expression Language (CEL) CLI Tool"
   homepage "https://github.com/IvanIsCoding/celq"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT OR Apache-2.0"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/IvanIsCoding/celq/releases/download/v0.1.1/celq-aarch64-apple-darwin.tar.gz"
-      sha256 "fdca719994ff9166a77a150f771b87b351d037318525178360b305ad5c5367da"
+      url "https://github.com/IvanIsCoding/celq/releases/download/v0.2.0/celq-macos-aarch64.tar.gz"
+      sha256 "94cc9ed766b0de7aed4be19267ec0346ed13a6663dd3b4d24aa9a2ba7169a465"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/IvanIsCoding/celq/releases/download/v0.1.2-alpha.2/celq-x86_64-apple-darwin.tar.gz"
-      sha256 "sha256:e6155e1df1803c6719ebb433617dd0b427ffe87f52af27c3a93274e4c8a00984"
+      url "https://github.com/IvanIsCoding/celq/releases/download/v0.2.0/celq-macos-x86_64.tar.gz"
+      sha256 "b872f208b35f50bdac70150dc7d61c7daafb3d327d5488d4a03063dde4d99cff"
     end
   else
     # Fallback to source for Linux
-    url "https://github.com/IvanIsCoding/celq/archive/refs/tags/v0.1.1.tar.gz"
-    sha256 "7b84882e699f2372a8abbc33ab306851706041b7adaf3d4458e7a659a8eda787"
+    url "https://github.com/IvanIsCoding/celq/archive/refs/tags/v0.2.0.tar.gz"
+    sha256 "f1430faa5781dcc0a2ae1954d945e36334b189120a9bec6568226b43690f8bd8"
     depends_on "rust" => :build
   end
 
