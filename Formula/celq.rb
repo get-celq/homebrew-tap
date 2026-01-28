@@ -13,21 +13,21 @@ class Celq < Formula
       url "https://github.com/IvanIsCoding/celq/releases/download/v0.3.1/celq-macos-x86_64.tar.gz"
       sha256 "e2d217ae79ddba1b8f2086928a045ed224b49bebae53f0c8af26f1afe4762a02"
     end
-  else
-    # Fallback to source for Linux
-    url "https://github.com/IvanIsCoding/celq/archive/refs/tags/v0.3.1.tar.gz"
-    sha256 "9d90ed01796a225e81bcdf8bdca702912e268e108e1e4adfea4524babeb7368c"
-    depends_on "rust" => :build
+  end
+  
+  if OS.linux?
+    if Hardware::CPU.arm?
+      url "https://github.com/IvanIsCoding/celq/releases/download/v0.3.1/celq-linux-aarch64-gnu.tar.gz"
+      sha256 "8fa2969cb9840fc4c8fca6c6eaa37e00169893ccf3f005913038900db63a7d6b"
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/IvanIsCoding/celq/releases/download/v0.3.1/celq-linux-x86_64-gnu.tar.gz"
+      sha256 "7727d5a10efc832240e10c51559ba0c45720f8f717dabe0a9e34b8c99a9e95ae"
+    end
   end
 
   def install
-    if OS.mac?
-      # Install pre-built binary
-      bin.install "celq"
-    else
-      # Build from source
-      system "cargo", "install", "--locked", "--root", prefix, "--path", "."
-    end
+    bin.install "celq"
   end
 
   test do
