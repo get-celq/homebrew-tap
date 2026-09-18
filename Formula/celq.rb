@@ -1,28 +1,28 @@
 class Celq < Formula
   desc "A Common Expression Language (CEL) CLI Tool"
   homepage "https://github.com/IvanIsCoding/celq"
-  version "0.7.0"
+  version "0.7.1"
   license "MIT OR Apache-2.0"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/IvanIsCoding/celq/releases/download/v0.7.0/celq-macos-aarch64.tar.zst"
-      sha256 "e44b4c6b916e9055e191ad5ab607c48c98cce0f99cccf8ffb35e9b71c5ac9f5d"
+      url "https://github.com/IvanIsCoding/celq/releases/download/v0.7.1/celq-macos-aarch64.tar.zst"
+      sha256 "4eb861bd8d8b2772bd9c3eb86d7aeed9c016a16e4fc5acc6f15653c5a3993201"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/IvanIsCoding/celq/releases/download/v0.7.0/celq-macos-x86_64.tar.gz"
-      sha256 "56b914fad6565c74a8fe4a197dc9acd1368cadc72020fa5bbbdccc3bbdb160bd"
+      url "https://github.com/IvanIsCoding/celq/releases/download/v0.7.1/celq-macos-x86_64.tar.gz"
+      sha256 "2b4a1f0f2470edb39bfe95bab947c86c95cc68fb82f867cc79246d6fb88a5009"
     end
   end
   
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/IvanIsCoding/celq/releases/download/v0.7.0/celq-linux-aarch64-gnu.tar.zst"
-      sha256 "330fc58ec334b7aa85c4d411f0abbae3370d48e129bf61551189b9ecb6ece078"
+      url "https://github.com/IvanIsCoding/celq/releases/download/v0.7.1/celq-linux-aarch64-gnu.tar.zst"
+      sha256 "7c411c16ed0f960786c656b1d7d941689042406204b8db47bb41bc543590836e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/IvanIsCoding/celq/releases/download/v0.7.0/celq-linux-x86_64-gnu.tar.zst"
-      sha256 "cb7e9d9c2d5a4b11f1e0b298ea10c581efd03bf569520b159a1626ebd651c0eb"
+      url "https://github.com/IvanIsCoding/celq/releases/download/v0.7.1/celq-linux-x86_64-gnu.tar.zst"
+      sha256 "6c244029c44862049029f8eb6f1fd8c7b90606ed90fa02db02f77f1300de4b51"
     end
   end
 
