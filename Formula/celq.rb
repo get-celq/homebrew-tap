@@ -21,7 +21,7 @@ class Celq < Formula
       sha256 "8df641a435131f3a371597b99962e9f4df9258e2e7ace7f707ae9380ed0114d9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/IvanIsCoding/celq/releases/download/v0.7.1/celq-linux-x86_64-gnu.tar.zst"
+      url "https://github.com/IvanIsCoding/celq/releases/download/v0.7.1/celq-linux-x86_64-gnu.tar.gz"
       sha256 "88e237e8c550556fdbbf2c4ff6ebd1b05921924df2d611ec756b1ad0e5641db2"
     end
   end
